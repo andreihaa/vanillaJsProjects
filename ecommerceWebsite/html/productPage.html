@@ -17,7 +17,9 @@
     <header class="header">
         <nav class="main-nav">
             <img class="logo" src="/img/logo.jpg" alt="website logo">
+            <a href="http://localhost:8080/html/shoppingCart" class="productPage-link">
             <ion-icon class="shopping-cart-icon" name="cart-outline"></ion-icon>
+            </a>
         </nav>
     </header>
     <main>
@@ -50,7 +52,23 @@
             </template>
         </section>
         <section class = "product-related-section">
-            
+            <h2 class="sub-heading-category">Similar Products</h2>
+            <div id="card-container-same-category" class="grid-category"></div>
+            <template id="card-template-category">
+                <div class="card-category"> <!--id="card"-->
+                    <div class="img-div-category">
+                        <img class="card-img-category" src="" alt="product image">
+                    </div>
+                    <div class="product-text-category">
+                        <!-- <h2 class="product-heading"></h2> -->
+                        <div class="product-attributes-category">
+                            <h2 class="product-heading-category"></h2>
+                            <p class="card-detail-category"></p>
+                            <p class="card-price-category"></p>
+                        </div>
+                    </div>
+                </div>
+            </template>
         </section>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

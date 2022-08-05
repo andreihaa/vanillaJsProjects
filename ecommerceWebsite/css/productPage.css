@@ -65,15 +65,17 @@ body {
     box-shadow: 0 3.2rem 6.4rem rgba(88, 88, 88, 0.2);
 }
 
+.button-div {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
 
 .button-product {
     display: none;
+    padding-left: 1rem;
 }
 
 .button-add-product {
-    /* display: inline-block; */
-    /* display: flex;
-    align-items: center; */
     display: inline-block;
     text-decoration: none;
     margin-left: 0;
@@ -84,8 +86,6 @@ body {
     border: none;
     color: #fff;
     text-decoration: none;
-    /* font-size: 2rem; */
-    /* padding: 1.6rem 3.2rem; */
     border-radius: 9px;
     font-weight: 600;
     transition: all 0.3s;
@@ -105,9 +105,6 @@ body {
 
 
 .button-remove-product {
-    /* display: inline-block; */
-    /* display: flex;
-    align-items: center; */
     display: none;
     text-decoration: none;
     margin-left: 0;
@@ -117,10 +114,7 @@ body {
     background-color: #999;
     border: none;
     color: #fff;
-    /* display: inline-block; */
     text-decoration: none;
-    /* font-size: 2rem; */
-    /* padding: 1.6rem 3.2rem; */
     border-radius: 9px;
     font-weight: 600;
     transition: all 0.3s;
@@ -137,4 +131,71 @@ body {
     background-color: #111;
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+.product-detail-product-text {
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+.product-detail-heading{
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 0.1rem solid black;
+}
+
+.product-detail-attributes {
+    padding: 1rem 3rem 1rem 1rem;
+    list-style: none;;
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.sub-heading-category{
+    font-weight: 700;
+    font-size: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+}
+
+.product-related-section {
+    width: 100%;
+}
+
+.grid-category{
+    width: 100%;
+    display:flex; 
+    justify-content: flex-start;
+}
+
+.card-category{
+    width: 35rem; 
+    padding: 2rem; 
+}
+
+.card-img-category {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.card-detail-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 0.1rem solid black;
+}
+
+.card-detail-category{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-detail-description {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.shopping-cart-icon {
+    color: #555;
 }
