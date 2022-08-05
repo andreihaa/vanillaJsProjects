@@ -52,11 +52,10 @@ function createData(){
                 removeButton.classList.replace("button-remove-product", "button-add-product");
             }
         }
-    })
+    })    
 }
 
 
-createData()
 
 function addToCart(product) {
     let currentCartProducts = getFromLocalStorage(); 
@@ -85,30 +84,30 @@ function removeFromCart(product){
 }
 
 
-
-
-
 function createDataCategory() {
-    const productOnPage = products.find( product => {
+    const productOnDisplay = products.find( product => {
         if(product.id === paramID){
             return product
         }
     })
-    let temporaryCard = document.getElementById('card-template-category').content;
+    let temporaryCardCategory = document.getElementById('card-template-category').content;
     document.getElementById('card-container-same-category').replaceChildren();
 
     let sameCategory = products.filter( product =>{
-        if(productOnPage.category === product.category){
-            let copyHTML = document.importNode(temporaryCard, true).children[0];
-            copyHTML.querySelector('.card-img-category').setAttribute("src", product.images[0]);
-            copyHTML.querySelector('.product-heading-category').textContent = product.title;
-            copyHTML.querySelector('.card-detail-category').textContent = `Category - ${product.category}`;
-            copyHTML.querySelector('.card-price-category').textContent = `Price ${product.price} $`;
-            product.element = copyHTML;
-            document.getElementById('card-container-same-category').appendChild(copyHTML);
+        if(productOnDisplay.category === product.category){
+            let copyHTMLCategory = document.importNode(temporaryCardCategory, true).children[0];
+            copyHTMLCategory.querySelector('.card-img-category').setAttribute("src", product.images[0]);
+            copyHTMLCategory.querySelector('.product-heading-category').textContent = product.title;
+            copyHTMLCategory.querySelector('.card-detail-category').textContent = `Category - ${product.category}`;
+            copyHTMLCategory.querySelector('.card-price-category').textContent = `Price ${product.price} $`;
+            document.getElementById('card-container-same-category').appendChild(copyHTMLCategory);
         }
     })
 }
 
+
+createData()
 createDataCategory()
 
+
+// 
