@@ -199,3 +199,12 @@ body {
 .shopping-cart-icon {
     color: #555;
 }
+
+@media screen and (max-width: 520px){
+    .grid-product-page {
+        display: grid;
+        column-gap: 1.6rem;
+        row-gap: 2.4rem;
+        grid-template-rows: 30rem 1fr 1fr;
+    }
+}

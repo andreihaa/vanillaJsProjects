@@ -138,5 +138,4 @@ function removeFromCart(product){
     console.log(localStorage);
 }
 
-
-export {getFromLocalStorage, addToCart, removeFromCart}
+  
